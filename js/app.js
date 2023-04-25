@@ -8,10 +8,10 @@ $(document).ready(function(){
     $('.do-request').on('click', function(){
          $.get('http://jsonplaceholder.typicode.com/posts')
              .done(function(result){
-                 $('#results').text(JSON.stringify(result, null, 2));
+                 $('#results').text(JSON.stringify(result, null, 2))
              })
-             .fail(function(error){
-                 console.error(error);
+             .fail(function(error{
+                 console.error(error)
              })
     })
 });
